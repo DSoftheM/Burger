@@ -304,6 +304,13 @@ body._touch .menu__list>li._active .menu__arrow {
     transition: all 0.3s ease 0s;
 }
 
+@media (max-width: 500px) {
+    .page__section {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
 .page__section:hover {
     position: relative;
     z-index: 1;
@@ -343,6 +350,22 @@ body._touch .menu__list>li._active .menu__arrow {
 .page__text {
     display: flex;
     gap: 20px;
+}
+
+@media (max-width: 930px) {
+    .page__text {
+        flex-direction: column;
+    }
+
+    .page__img {
+        order: 1;
+    }
+
+    .page__left {
+        order: 2;
+    }
+
+
 }
 
 .page__text_reverse .page__left {
